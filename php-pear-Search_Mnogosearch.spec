@@ -29,10 +29,14 @@ the result. The usage is just like the usage in the "DB" and
 
 In PEAR status of this package is: %{_status}.
 
-#%description -l pl
-#...
-#
-#Ta klasa ma w PEAR status: %{_status}.
+%description -l pl
+Ten pakiet dostarcza klasy obudowuj±ce dla silnika wyszukiwarki
+mnoGoSearch. Pakiet ma dwie g³ówne klasy: Search_Mnogosearch i
+Search_Mnogosearch_Result. Klasa Search_Mnogosearch daje obiekt
+reprezentuj±cy wyszukiwanie, a Search_Mnogosearch_Result - wynik.
+Sposób u¿ycia jest podobny do klas DB i DB_result.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
