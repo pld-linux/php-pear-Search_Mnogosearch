@@ -8,13 +8,14 @@ Summary:	%{_pearname} - Wrapper classes for the mnoGoSearch extention
 Summary(pl):	%{_pearname} - Klasy do obs³ugi rozszerzenia mnoGoSearch
 Name:		php-pear-%{_pearname}
 Version:	0.1.1
-Release:	1.1
+Release:	1.2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	af6c5903821f72e00c65dc573e638581
 URL:		http://pear.php.net/package/Search_Mnogosearch/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-common >= 3:5.0.0
 Requires:	php-pear
 Requires:	php-mnogosearch
 BuildArch:	noarch
