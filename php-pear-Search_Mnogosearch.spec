@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Wrapper classes for the mnoGoSearch extention
-Summary(pl):	%{_pearname} - Klasy do obs≥ugi rozszerzenia mnoGoSearch
+Summary(pl.UTF-8):   %{_pearname} - Klasy do obs≈Çugi rozszerzenia mnoGoSearch
 Name:		php-pear-%{_pearname}
 Version:	0.1.1
 Release:	5
@@ -36,12 +36,12 @@ the result. The usage is just like the usage in the "DB" and
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten pakiet dostarcza klasy obudowuj±ce dla silnika wyszukiwarki
-mnoGoSearch. Pakiet ma dwie g≥Ûwne klasy: Search_Mnogosearch i
+%description -l pl.UTF-8
+Ten pakiet dostarcza klasy obudowujƒÖce dla silnika wyszukiwarki
+mnoGoSearch. Pakiet ma dwie g≈Ç√≥wne klasy: Search_Mnogosearch i
 Search_Mnogosearch_Result. Klasa Search_Mnogosearch daje obiekt
-reprezentuj±cy wyszukiwanie, a Search_Mnogosearch_Result - wynik.
-SposÛb uøycia jest podobny do klas DB i DB_result.
+reprezentujƒÖcy wyszukiwanie, a Search_Mnogosearch_Result - wynik.
+Spos√≥b u≈ºycia jest podobny do klas DB i DB_result.
 
 Ta klasa ma w PEAR status: %{_status}.
 
