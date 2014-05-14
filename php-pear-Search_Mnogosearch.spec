@@ -13,7 +13,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Search_Mnogosearch/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.654
 Requires:	php(core) >= 5.0.0
 Requires:	php-mnogosearch
 Requires:	php-pear
@@ -24,7 +24,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # exclude optional dependencies
-%define		_noautoreq	'pear(HTML/QuickForm.*)' 'pear(HTML/Template/Sigma.*)' 'pear(Pager.*)'
+%define		_noautoreq_pear HTML/QuickForm.* HTML/Template/Sigma.* Pager.*
 
 %description
 This package provides wrapper classes for the mnoGoSearch search
