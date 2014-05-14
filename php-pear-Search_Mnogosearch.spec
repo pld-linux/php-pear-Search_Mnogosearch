@@ -1,13 +1,11 @@
-%include	/usr/lib/rpm/macros.php
-%define		_class		Search
-%define		_subclass	Mnogosearch
 %define		_status		alpha
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname Search_Mnogosearch
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Wrapper classes for the mnoGoSearch extention
 Summary(pl.UTF-8):	%{_pearname} - Klasy do obsługi rozszerzenia mnoGoSearch
 Name:		php-pear-%{_pearname}
 Version:	0.1.1
-Release:	7
+Release:	8
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,7 +14,7 @@ URL:		http://pear.php.net/package/Search_Mnogosearch/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:5.0.0
+Requires:	php(core) >= 5.0.0
 Requires:	php-mnogosearch
 Requires:	php-pear
 Suggests:	php-pear-HTML_QuickForm >= 3.2.3
@@ -68,6 +66,6 @@ fi
 %doc install.log
 %doc docs/%{_pearname}/docs/*
 %{php_pear_dir}/.registry/*.reg
-%dir %{php_pear_dir}/%{_class}
-%{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}
+%dir %{php_pear_dir}/Search
+%{php_pear_dir}/Search/*.php
+%{php_pear_dir}/Search/Mnogosearch
