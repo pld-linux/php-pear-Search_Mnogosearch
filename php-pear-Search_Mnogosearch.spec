@@ -1,6 +1,5 @@
 %define		_status		alpha
 %define		_pearname Search_Mnogosearch
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Wrapper classes for the mnoGoSearch extention
 Summary(pl.UTF-8):	%{_pearname} - Klasy do obsługi rozszerzenia mnoGoSearch
 Name:		php-pear-%{_pearname}
